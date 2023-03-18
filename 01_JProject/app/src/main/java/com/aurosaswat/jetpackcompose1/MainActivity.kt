@@ -15,29 +15,26 @@ import com.aurosaswat.jetpackcompose1.ui.theme.JetpackCompose1Theme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+//        Before Jetpack Compose we had setContentView()
+
         setContent {
-            JetpackCompose1Theme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
-                    Greeting("Android")
-                }
-            }
+            Greeting(name = "Auro Saswat Raj")
         }
     }
 }
 
+// To Define Views in Kotlin we use functions in Kotlin ;-0
+// We annotate the function with @Composable ;)
 @Composable
 fun Greeting(name: String) {
+//    Used to Display Text ;)
     Text(text = "Hello $name!")
 }
 
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-    JetpackCompose1Theme {
-        Greeting("Android")
-    }
+
+        Greeting("Saswat")
+
 }
