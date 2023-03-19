@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
                 Text(text = buildAnnotatedString {
                     withStyle(
                         style = SpanStyle(
-                            color = androidx.compose.ui.graphics.Color.Green
+                            color = Color.Green
                             , fontSize = 50.sp
                         )
                     ){
@@ -46,7 +46,7 @@ class MainActivity : ComponentActivity() {
 
                     withStyle(
                             style = SpanStyle(
-                                color = androidx.compose.ui.graphics.Color.Green
+                                color = Color.Green
                                 , fontSize = 50.sp
                             )
                         ){
