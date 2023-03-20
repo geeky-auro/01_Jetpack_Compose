@@ -33,6 +33,11 @@ class MainActivity : ComponentActivity() {
              *
              * */
             Column(Modifier.fillMaxSize()) {
+                /*
+                * In order for Compose to be aware of state changes, your state values need to be wrapped in a State object. You can do that using the mutableStateOf() function.
+                * This will return a MutableState<T> object and Compose will keep track of changes and update the UI whenever you modify the value.
+                * Refer this Article
+                * */
                 val color= remember{
                     mutableStateOf(Color.Yellow)
                 }
